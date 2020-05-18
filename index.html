@@ -1,0 +1,896 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Fitness By Pao Beltran</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<script src="js/jquery.slim.js"></script>
+	<!-- Bootstrap tooltips -->
+	
+</head>
+
+<!--
+	simple lang content.
+hindi readable ( lahat baguhin)
+yung sa big picture - i buo nlng content
+-->
+
+<body id="page-top">
+	
+	 <!-- Navigation -->
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark py-4 fixed-top " id="mainNav">
+    <div class="container-fluid">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top"><h4>FITNE<span class="colorOrange">SS</span></h4></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav mr-auto mx-3">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger text-white" href="#about"><h4>About</h4></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger text-white" href="#services"><h4>Services</h4></a>
+          </li>
+			<li class="nav-item">
+            <a class="nav-link js-scroll-trigger text-white" href="#trainer"><h4>Trainers</h4></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger text-white" href="#contact"><h4>Contact</h4></a>
+          </li>
+			 <li class="nav-item">
+            <a class="nav-link js-scroll-trigger text-white" href="#blog"><h4>Blogs</h4></a>
+          </li>
+        </ul>
+		  <ul class="navbar-nav ml-auto">
+            <li class="nav-item mx-3">
+                <a class="nav-link  text-white" href="#" data-toggle="modal" data-target="#modalLogin"><h4>LOGIN</h4></a>
+				
+            </li>
+            <li class="nav-item  mx-3">
+                <a class="nav-link  text-white" href="#" data-toggle="modal" data-target="#modalSignUp"><h4>SIGN UP</h4></a>
+				
+				
+            </li>
+			  <li class="nav-item  mx-3">
+                <a class="nav-link text-white wBorders align-bottom" href="#" data-toggle="modal" data-target="#modalChoosePlan"><h4>CHOOSE PLAN</h4></a>
+					  
+            </li>
+        </ul>
+      </div>
+    </div>
+	    
+	  
+  </nav>
+	
+	<!-- modal login-->
+	
+	<div class="modal fade" id="modalLogin" role="dialog">
+    <div class="modal-dialog modal-md">
+      <div class="modal-content ">
+        <div class="modal-header text-center">
+			 <h2 class="modal-title w-100 ">Sign in</h2>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+			
+			
+         
+        </div>
+        <div class="modal-body ">
+          <form class="form-signin">
+              <div class="form-label-group pt-3">
+                <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+                
+              </div>
+
+              <div class="form-label-group pb-3">
+                <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+               
+              </div>
+
+              <div class="custom-control custom-checkbox mb-3">
+                <input type="checkbox" class="custom-control-input" id="customCheck1">
+                <label class="custom-control-label" for="customCheck1">Remember password</label>
+              </div>
+              <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Sign in</button>
+              <hr class="my-4">
+			  <a href="#"><h4 class="text-center py-2">Forgot Username or Password?</h4></a>
+              <button class="btn btn-lg btn-google btn-block text-uppercase" type="submit"><i class="fa fa-google mr-2"></i> Sign in with Google</button>
+              <button class="btn btn-lg btn-facebook btn-block text-uppercase" type="submit"><i class="fa fa-facebook-f mr-2"></i> Sign in with Facebook</button>
+            </form>
+        </div>
+        <div class="modal-footer text-center">
+         	 <h4 class="w-100"><span>Not yet a member? </span><a data-dismiss="modal" data-toggle="modal" href="#modalSignUp">Sign Up</a></h4>
+			
+        </div>
+      </div>
+    </div>
+  </div>
+	
+	<!-- modal signup-->
+	
+	<div class="modal fade" id="modalSignUp" role="dialog">
+		<div class="modal-dialog modal-md">
+			<div class="modal-content ">
+				<div class="modal-body p-0">
+				<div class="signup-form text-center">
+					<form class="py-4">
+						<h1>Create an Account</h1>
+						<p class="hint-text">Sign up with your social media account or email address</p>
+						<div class="row social">
+							<div class="col-md-4 col-sm-4">
+								<a href="#" class="btn btn-primary btn-lg"><i class="fa fa-facebook"></i> Facebook</a>
+							</div>
+							<div class="col-md-4 col-sm-4">
+								<a href="#" class="btn btn-info btn-lg"><i class="fa fa-twitter"></i> Twitter</a>
+							</div>
+							<div class="col-md-4 col-sm-4">
+								<a href="#" class="btn btn-danger btn-lg"><i class="fa fa-google"></i> Google</a>
+							</div>
+						</div>
+						<div class="or-seperator mt-5"><b>or</b></div>
+						 <div class="form-group">
+							<input type="text" class="form-control input-lg" name="username" placeholder="Username" required="required">
+						</div>
+						<div class="form-group">
+							<input type="email" class="form-control input-lg" name="email" placeholder="Email Address" required="required">
+						</div>
+						<div class="form-group">
+							<input type="password" class="form-control input-lg" name="password" placeholder="Password" required="required">
+						</div>
+						<div class="form-group">
+							<input type="password" class="form-control input-lg" name="confirm_password" placeholder="Confirm Password" required="required">
+						</div> 
+						 <div class="form-group">
+						<button type="submit" class="btn btn-success btn-lg btn-block signup-btn">Sign Up</button>
+					</div>
+					</form>
+				
+				</div>
+			
+			</div>
+				  <div class="modal-footer text-center loginGreen">
+         	 <h5 class="w-100">Already have an account? <a data-dismiss="modal" data-toggle="modal" href="#modalLogin">Login here</a></h5>
+			
+        </div>
+			
+			</div>
+			
+		
+		
+		</div>
+	
+	</div>
+
+	<!-- modal choose plan-->
+		<div class="modal fade" id="modalChoosePlan" role="dialog">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+					<div class="modal-header text-center d-flex justify-content-center">
+					
+				 
+					<div class="row text-center">
+							<div class="col-md-12">
+						 <h2 class="modal-title w-100 font-italic">WHATS YOUR <span class="colorOrange">PLAN?</span></h2>
+								</div>
+							<div class="col-md-12 py-3">
+								<p class="mx-auto underlineOrange"></p>
+							</div>
+						<div class="col-md-12 ">
+								<h3 class="colorGrey">Find the plan that best fits your <span class="colorOrange font-italic">LIFE?</span> </h3>
+							
+							</div>
+						</div>
+			
+         
+       				 </div>
+				
+					
+					<div class="modal-body mx-auto col-md-12">
+					<div class="row">
+						<div class="card-deck mb-3 text-center col-md-12">
+							<div class="col-md-6">
+								<div class="card mb-4 box-shadow">
+								<div class="card-header">
+									<h3 class="font-italic"><span class="colorOrange">PREMIUM</span> HOME</h3>
+									<p class="mx-auto underlineOrange"></p>
+									<h5 class="font-weight-bold">FITNE<span class="colorOrange">SS</span></h5>
+									
+								</div>
+								<div class="card-body">
+										<h1 class="card-title pricing-card-title">PHP 1,990 <small class="colorOrange">/ month</small></h1>
+										<ul class="list-group">
+										  <li class="list-group-item"><h4>Choose from 12-month or 5-month ongoing membership</h4></li>
+										  <li class="list-group-item"><h4>Access to FITNE<span class="colorOrange">SS </span>Premium Club</h4></li>
+											<li class="list-group-item pb-4"><h4>Access to:
+												 <ul class="text-left font-weight-light">
+												<li class="pb-1   ">Cardio &amp; Free Weights Areas</li>
+												<li class="pb-1">Pin loaded Machines</li>
+												<li class="pb-1">Sauna/Steam</li>	 
+												<li class="pb-1">Coffee/Tea</li>
+												<li class="pb-1">WIFI</li>	
+												<li class="pb-1">Lounge</li>	
+												<li class="pb-1">Toileteries</li>
+												<li class="pb-1">Boditrax</li>
+												<li class="pb-1">New Member Induction </li>
+												<li class="pb-1">Shower</li>
+												<li class="pb-3">Electronic Locker System </li>
+												</ul>	
+												
+												</h4></li>
+										 
+										</ul>	
+									
+									</div>
+							
+							</div>
+							
+							</div>
+							<div class="col-md-6">
+							<div class="card mb-4 box-shadow">
+								<div class="card-header">
+									<h3 class="font-italic"><span class="colorOrange">PLATINUM</span> HOME</h3>
+									<p class="mx-auto underlineOrange"></p>
+									<h5 class="font-weight-bold">FITNE<span class="colorOrange">SS</span></h5>
+								</div>
+							
+								
+								<div class="card-body">
+										<h1 class="card-title pricing-card-title">PHP 2700 <small class="colorOrange">/ month</small></h1>
+										<ul class="list-group">
+										  <li class="list-group-item"><h4>Choose from 12-month or 5-month ongoing membership</h4></li>
+										  <li class="list-group-item"><h4>Access to FITNE<span class="colorOrange">SS</span> Platinum Club</h4></li>
+										  <li class="list-group-item"><h4><span class= "mr-3">Access to</span>
+												 <ul class="text-left font-weight-light ">
+												<li class="pb-1">Cardio &amp; Free Weights Areas</li>
+												<li class="pb-1">Pin loaded Machines</li>
+												<li class="pb-1">Sauna/Steam</li>	 
+												<li class="pb-1">Coffee/Tea</li>
+												<li class="pb-1">WIFI</li>	
+												<li class="pb-1">Lounge</li>	
+												<li class="pb-1">Toileteries</li>
+												<li class="pb-1">Boditrax</li>
+												<li class="pb-1">New Member Induction </li>
+												<li class="pb-1">Shower</li>
+												<li class="pb-1">Electronic Locker System </li>
+												<li >Indoor Lap Pool</li>	
+												
+												</ul>	
+												
+												</h4></li>
+										</ul>	
+									
+									</div>
+								
+							</div>
+							
+							</div>
+								<div class="col-md-12">
+									<div class="row mx-auto">
+									<div class="col-md-12">
+										<h3 class="font-italic"><span class="colorOrange">ADD</span>ONS</h3>
+									<p class="mx-auto underlineOrange"></p>
+										 
+									</div>
+									
+									</div>
+									 <div class="row">
+										<div class="col-md-12">
+										  <div class="card mt-3 tab-card">
+											<div class="card-header tab-card-header ">
+											  <ul class="nav nav-tabs card-header-tabs " id="myTab" role="tablist">
+												<li class="nav-item mx-auto">
+													<a class="nav-link active" id="one-tab" data-toggle="tab" href="#one" role="tab" aria-controls="One" aria-selected="true"><h2>Premium</h2></a>
+												</li>
+												<li class="nav-item mx-auto">
+													<a class="nav-link" id="two-tab" data-toggle="tab" href="#two" role="tab" aria-controls="Two" aria-selected="false"><h2>Platinum</h2></a>
+												</li>
+												
+											  </ul>
+											</div>
+
+											<div class="tab-content" id="myTabContent">
+											  <div class="tab-pane fade show active p-3" id="one" role="tabpanel" aria-labelledby="one-tab">
+													<div class="col-md-12">
+												  		<div class="row">
+															<div class="col-md-4">
+																
+															<img src="img/gym1.png">
+															<div class="row">
+																<div class="col-md-12"><h5 class="colorOrange">UNLIMITED GX/CLASSES</h5></div>
+																<div class="col-md-12"><p class="secondary">+999PHP/mo</p></div>
+																</div>	
+															
+															</div>
+															<div class="col-md-4">
+																<img src="img/gym2.png">
+															<div class="row">
+																<div class="col-md-12"><h5 class="colorOrange">UNLIMITED YOGA CLASSES</h5></div>
+																<div class="col-md-12"><p class="secondary">+500PHP/mo</p></div>
+																</div>	
+															
+															</div>
+															<div class="col-md-4">
+																<img src="img/gym3.png">
+															<div class="row">
+																<div class="col-md-12"><h5 class="colorOrange">UNLIMITED WEIGHTLIFT (With Instructor Guide) </h5></div>
+																<div class="col-md-12"><p class="secondary">+1500PHP/mo</p></div>
+																</div>	
+															
+															</div>
+															
+															<div class="col-md-4">
+																
+															<img src="img/gym4.png">
+															<div class="row">
+																<div class="col-md-12"><h5 class="colorOrange">Dual Access</h5></div>
+																<div class="col-md-12"><p class="secondary">+Access to all 12 Fitness First clubs and 2 Celebrity Fitness clubs+ PHP1,100/mo</p></div>
+																</div>	
+															
+															</div>
+															<div class="col-md-4">
+																<img src="img/gym5.png">
+															<div class="row">
+																<div class="col-md-12"><h5 class="colorOrange">Premium Access</h5></div>
+																<div class="col-md-12"><p class="secondary">+	Access to all 12 FITNE<span class="colorOrange">SS</span> clubs
++ PHP910/mo</p></div>
+																</div>	
+															
+															</div>
+															<div class="col-md-4 pt-3">
+																<img src="img/gym6.png">
+															<div class="row">
+																<div class="col-md-12"><h5 class="colorOrange">Passport Access</h5></div>
+																<div class="col-md-12"><p class="secondary">+Access to all 7 Premium clubs: Nemic, Mars, Mall of Asia +PHP150/mo</p></div>
+																</div>	
+															
+															</div>   
+															
+														</div>
+												  
+												  </div>
+											  </div>
+												
+												
+											  <div class="tab-pane fade p-3" id="two" role="tabpanel" aria-labelledby="two-tab">
+												        <div class="col-md-12">
+												  		<div class="row">
+															<div class="col-md-4">
+																
+															<img src="img/gym1.png">
+															<div class="row">
+																<div class="col-md-12"><h5 class="colorOrange">UNLIMITED GX/CLASSES</h5></div>
+																<div class="col-md-12"><p class="secondary">+999PHP/mo</p></div>
+																</div>	
+															
+															</div>
+															<div class="col-md-4">
+																<img src="img/gym2.png">
+															<div class="row">
+																<div class="col-md-12"><h5 class="colorOrange">UNLIMITED YOGA CLASSES</h5></div>
+																<div class="col-md-12"><p class="secondary">+500PHP/mo</p></div>
+																</div>	
+															
+															</div>
+															<div class="col-md-4">
+																<img src="img/gym3.png">
+															<div class="row">
+																<div class="col-md-12"><h5 class="colorOrange">UNLIMITED WEIGHTLIFT (With Instructor Guide) </h5></div>
+																<div class="col-md-12"><p class="secondary">+1500PHP/mo</p></div>
+																</div>	
+															
+															</div>
+															
+															<div class="col-md-4">
+																
+															<img src="img/gym4.png">
+															<div class="row">
+																<div class="col-md-12"><h5 class="colorOrange">Dual Access</h5></div>
+																<div class="col-md-12"><p class="secondary">+Access to all 12 Fitness First clubs and 2 Celebrity Fitness clubs+ PHP400/mo</p></div>
+																</div>	
+															
+															</div>
+															
+															<div class="col-md-4 pt-3">
+																<img src="img/gym6.png">
+															<div class="row">
+																<div class="col-md-12"><h5 class="colorOrange">Passport Access</h5></div>
+																<div class="col-md-12"><p class="secondary">+Access to all 7 Premium clubs: Nemic, Mars, Mall of Asia +PHP150/mo</p></div>
+																</div>	
+															
+															</div>
+															
+															<div class="col-md-4 pt-4">
+																
+															<img src="img/gym7.png">
+															<div class="row">
+																<div class="col-md-12"><h5 class="colorOrange">Workout Kit</h5></div>
+																<div class="col-md-12"><p class="secondary">+PHP200/mo</p></div>
+																</div>	
+															
+															</div>
+															
+														</div>
+												  
+												  </div>
+											  </div>
+											
+
+											</div>
+										  </div>
+										</div>
+									  </div>
+							
+							</div>
+							
+							<div class="col-md-12">
+								<div class="row mx-auto py-3">
+									<div class="col-md-12 py-3">
+											<h3 class="font-italic"><span class="colorOrange">Terms </span><span class="colorGrey">&amp; </span><span class="colorOrange">Conditions</span>	<a class="fa fa-chevron-down rotate colorOrange" href="#collapseExample" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseExample"></a></h3> 
+									
+									
+								
+									
+										<div class="collapse" id="collapseExample">
+										  <div class="card card-body">
+											<div class="col-md-12">
+											  	<div class="row text-left">
+													<h3><span class="colorOrange">Premium</span></h3>
+													<p class="secondary text-secondary">- Rates stated are based on a 12-month ongoing membership package</p>
+													<p class="secondary text-secondary">- Senior Citizen and PWD discounts applicable only to the published rate and not discounted rate</p>
+													<h3><span class="colorOrange">Platinum</span></h3>
+													<p class="secondary text-secondary">- Rates stated are based on a 12-month ongoing membership package</p>
+													<p class="secondary text-secondary">- Senior Citizen and PWD discounts applicable only to the published rate and not discounted rate</p>
+													
+													<h3><span class="colorOrange">Unlimited Cycling Classes</span></h3>
+													<p class="secondary text-secondary">- Enjoy over 1,300 cycling classes monthly on top of your gym access:
+Signature Programs: Cycling &amp; Pro45; Les Mills Program: RPM
+*programs vary per club &amp; no. of classes is based on a Platinum Passport Plan</p>
+													
+													<h3><span class="colorOrange">Unlimited Yoga Classes</span></h3>
+													<p class="secondary text-secondary">- Enjoy over 800 yoga classes monthly on top of your gym access:
+Signature Programs: Core Flow Yoga, Dynamic Flow Yoga, Gentle Flow Yoga, Hot Flow Yoga, Advanced Flow Yoga, Aerial Flow Yoga; Les Mills Program: BodyBalance
+* programs vary per club &amp; no. of classes is based on a Platinum Passport Plan</p>
+													
+												<h3><span class="colorOrange">Unlimited Hit Circuit Classes</span></h3>
+														<p class="secondary text-secondary">- Enjoy over 1,400 HIIT Circuit training classes monthly on top of your gym access:
+Freestyle Group Training: HIIT, Power, Strength, Core, Box, Boom, XBlast, Burn, Move; Spartan SGX
+* programs vary per club &amp; no. of classes is based on a Platinum Passport Plan
+</p>			
+													<h3><span class="colorOrange">Unlimited Group Exercises Classes</span></h3>
+													<p class="secondary text-secondary">- Enjoy over 2,500 group exercise classes monthly on top of your gym access:
+Signature Programs: Hardcore, Hardcore Overload, Hardcore Maxx
+Les Mills Programs: BodyJam, BodyPump, BodyCombat, Tone, BodyStep, BodyAttack, Sh’Bam
+Other Dance Programs: Hip Hop, Retropop, Zumba
+* programs vary per club &amp; no. of classes is based on a Platinum Passport Plan
+
+</p>			
+												</div>
+											  
+											  </div>
+										  </div>
+										</div>
+									</div>
+								
+								</div>
+							
+							
+							</div>
+						</div>
+					</div>
+				
+				</div>
+				</div>
+				
+			
+			</div>	
+	
+		</div>
+	
+	
+<!--	header-->
+	<header>
+		<div class="container-fluid bgHeader">
+			<div class="jumbotron-fluid vh-100 d-flex justify-content-center">
+				<div class="row h-100">
+					<div class="col-md-2"></div>
+					<div class="col-md-10 my-auto">
+						<div class="row text-left text-white text-md-left text-center">
+						<div class="col-md-10 display-2 font-weight-bold">MAKE YOUR BODY</div>
+						<div class="col-md-10 display-2 font-weight-bold colorOrange">BEAUTIFUL</div>
+						<div class="col-md-10 pt-3 mx-1"><p> and practice social distancing to fight the spread of the <span class="colorOrange">VIRUS</span>.  </p></div>
+						<div class="col-md-10 pb-3 mx-1"><p> - and please consider staying <span class="colorOrange">HOME</span>. </p></div>	
+						<div class="col-md-10 py-5"><a data-dismiss="modal" data-toggle="modal" href="#modalChoosePlan"><button type="button" class="btn bgOrange text-white pt-3"><h3>GET IN TOUCH </h3></button></a></div>
+					</div>
+					
+					</div>
+				
+				</div>
+			</div>
+		
+		</div>
+
+		
+		
+	
+
+		</header>
+	
+
+	<!--	end of header-->
+	
+	<!--	body -->
+	<div class="container-fluid">
+		<!--	row welcome to fitness 2 col-->
+		
+		<section id="about">
+		<div class="row h-100 bg-light ">
+			<div class="col-md-2"></div>
+			<div class="col-md-10 my-auto">
+				<div class="row mx-auto py-5">
+					<div class="col-md-6 ">
+						<div class="row">
+							<div class="col-md-12 text-md-left text-center">
+								<h1 class="display-4 font-weight-bold py-5">WELCOME TO <span class="colorOrange">FITNESS </span></h1>
+							</div>
+							<div class="col-md-12">
+								<p class="text-dark font-weight-bold lh-2">Together we’ll create a personalized fitness plan to help you reach your goals – starting with your first <span class="colorOrange">30 days</span> in the gym.  </p>
+							</div>
+							<div class="col-md-12 ">
+								<p class="text-secondary secondary font-weight-bold lh-2 ">Need an emotional lift? Or need to blow off some steam after a stressful day? We <span class="colorOrange">FITNESS</span> can help. We give you some physical activity that stimulates various brain chemicals that may leave you feeling Happier, more Relaxed and less Anxious. You may also feel better about your appearance and yourself when you exercise regularly, which can Boost your confidence and Improve your self-esteem.</p>
+							</div>
+							
+								<div class="col-md-12 pt-3">
+								<p class="text-secondary secondary font-weight-bold lh-2 ">People like Sexy -- it’s just a FACT. We like being around sexy people; we're impressed by it and respect it. We <span class="colorOrange">FITNESS</span> helping you work toward a sexier YOU. </p>
+							</div>
+							
+							<div class="col-md-12 pt-3">
+								<p class="text-secondary secondary font-weight-bold lh-2 ">You’ll also have more Energy to be around people in your LIFE. You’ll want to go out and be social rather than sit around. Exercising gives us a body we can feel attractive in with our spouse or significant other, and the added energy and agility in the sack doesn't hurt. </p>
+							</div>
+						
+						
+						</div>
+					</div>
+					<div class="col-md-6 my-auto girlFit">
+						<img src="img/CENTRAL ELEMENT2@1X.png">
+					</div>
+				
+				</div>
+			
+			
+			</div>
+		
+		</div>
+		</section>
+		<!--	row welcome to fitness 3 col-->
+		<section id="services">		
+			<div class="row py-5">
+			<div class="col-md-2"></div>
+			<div class="col-md-8">
+				<div class="row text-md-left text-center">
+					<div class="col-md-12 text-md-left text-center"><h1 class=" font-weight-bold">WELCOME TO <span class="colorOrange">FITNESS</span></h1></div>
+					<div class="col-md-12 py-3"><p class="text-secondary secondary font-weight-bold lh-2 ">Without a doubt, regular exercise can benefit your Health, Mind and Body. Not only does it boost your energy, increase lean muscle mass, decrease your risk for certain health conditions and help you manage your weight, but it also improves your mood and enables you to Live longer. Sounds pretty amazing, right?. Heres are some of our <span class="colorOrange">FITNESS Training Program</span></p></div>
+				</div>
+				<div class="row py-5 ">
+					<div class="col-md-4 text-md-left text-center">
+						<div class="row">
+							<div class="col-md-12">
+								<figure class="figure">
+								  <img src="img/women2.png"
+									class="figure-img img-fluid z-depth-1 img-responsive" alt="..." style="width: 100%">
+								  <figcaption class="figure-caption bg-light" style="width:399px; height: 420px">
+										<div class="row ">
+									  		<div class="col-md-12 py-3 training text-center">
+												<h1 class="p-3 text-dark ">Basic Crossfit</h1>
+												<p class=" text-dark">Our staff includes amazing professionals that have an eye for crossfit</p>
+												<br><br>
+												<a data-dismiss="modal" data-toggle="modal" href="#modalChoosePlan"><button type="button" class="btn bgOrange text-white pt-3"><h3>GET IN TOUCH </h3></button></a>
+											</div>
+											
+									  
+									  	</div>
+									
+									</figcaption>
+								</figure>
+							</div>
+						</div>
+					
+					</div>
+					
+				<div class="col-md-4 text-md-left text-center" >
+						<div class="row">
+							<div class="col-md-12">
+								<figure class="figure">
+								  <img src="img/women3.png"
+									class="figure-img img-fluid z-depth-1 img-responsive" alt="..." style="width: 399px">
+								  <figcaption class="figure-caption bg-light" style="width:399px; height: 420px">
+										<div class="row">
+									  		<div class="col-md-12 py-3 training text-center">
+												<h1 class="p-3 text-dark text-center">Fitness Studio</h1>
+												<p class="p-3 text-dark">Work out in fitness groups or with a personal certified trainer</p>
+												<br><br>
+												<a data-dismiss="modal" data-toggle="modal" href="#modalChoosePlan"><button type="button" class="btn bgOrange text-white pt-3"><h3>GET IN TOUCH </h3></button></a>
+											</div>
+											
+									  
+									  	</div>
+									
+									</figcaption>
+								</figure>
+							</div>
+						</div>
+					
+					
+					</div>
+					<div class="col-md-4 text-md-left text-center">
+						<div class="row">
+							<div class="col-md-12">
+								<figure class="figure">
+								  <img src="img/women4.png"
+									class="figure-img img-fluid z-depth-1 img-responsive" alt="..." style="width: 399px">
+								  <figcaption class="figure-caption bg-light" style="width:399px; height: 420px">
+										<div class="row">
+									  		<div class="col-md-12 py-3 training text-center">
+												<h1 class="p-3 text-dark text-center">Yoga Classes</h1>
+												<p class="p-3 text-dark">What do you think about yoga? If you have a passion for this activity, we've got a special program</p>
+												<a data-dismiss="modal" data-toggle="modal" href="#modalChoosePlan"><button type="button" class="btn bgOrange text-white pt-3"><h3>GET IN TOUCH </h3></button></a>
+											</div>
+											
+									  
+									  	</div>
+									
+									</figcaption>
+								</figure>
+							</div>
+						</div>
+					
+					
+					</div>
+				
+				</div>
+					
+			
+			</div>
+		
+		</div>
+			</section>
+		<section id="trainer">
+		<!--	 we trained with personal trainer row -->
+		<div class="row h-100 bgTrainer vh-100 text-center">
+			<div class="col-md-12  my-auto">
+				<h1 class="display-3 text-white">WE TRAINED WITH</h1>
+				<h1 class="display-1 text-white font-weight-bold pb-5">PERSONAL TRAINER</h1>
+				<a data-dismiss="modal" data-toggle="modal" href="#modalChoosePlan"><button type="button" class="btn bgOrange text-white pt-3"><h3>GET IN TOUCH </h3></button></a>
+			</div>
+		
+		</div>
+		
+		<!--	 expert trainers row -->
+		
+		<div class="row py-5">
+				<div class="col-md-2"></div>
+					<div class="col-md-10">
+						<div class="row text-md-left text-center">
+							<div class="col-md-12"><h1 class=" font-weight-bold">EXPERT <span class="colorOrange">TRAINERS</span></h1></div>
+							<div class="col-md-12 py-3"><h5><p class="text-secondary font-weight-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed d isi ut aliquip ex ea commodo consequat.</p></h5></div>
+						</div>
+						<div class="row py-3">
+							<div class="col-md-4 text-md-left text-center">
+									<figure class="figure">
+								  <img src="img/image-trainer.png"
+									class="figure-img img-fluid z-depth-1 img-responsive" alt="..." style="width: 400px">
+								  <figcaption class="figure-caption" style="width:400px;">
+										<div class="row">
+									  		<div class="col-md-12 py-3 text-center">
+												<h1 class="p-3 text-dark">Sarra Miller <br> <span class="colorOrange"><h5>SPINNING TRAINER</h5></span> </h1>
+												<h5><p class="text-secondary font-weight-light">Our staff includes amazing professionals that have an eye for crossfit</p></h5>
+												
+											</div>
+											
+									  
+									  	</div>
+									
+									</figcaption>
+								</figure>
+							
+							</div>
+							<div class="col-md-4 text-md-left text-center">
+								<figure class="figure">
+								  <img src="img/image-trainer2.png"
+									class="figure-img img-fluid z-depth-1 img-responsive" alt="..." style="width: 400px;height:510px">
+								  <figcaption class="figure-caption" style="width:400px;">
+										<div class="row">
+									  		<div class="col-md-12 py-3 text-center">
+												<h1 class="p-3 text-dark">John Doe <br> <span class="colorOrange"><h5>BOOTCAMP TRAINER</h5></span> </h1>
+												<h5><p class="text-secondary font-weight-light">Our staff includes amazing professionals that have an eye for crossfit</p></h5>
+												
+											</div>
+											
+									  
+									  	</div>
+									
+									</figcaption>
+								</figure>
+							
+							</div>
+							<div class="col-md-4 text-md-left text-center">
+								<figure class="figure">
+								  <img src="img/image-trainer3.png"
+									class="figure-img img-fluid z-depth-1 img-responsive" alt="..." style="width: 400px;height:510px">
+								  <figcaption class="figure-caption" style="width:400px;">
+										<div class="row">
+									  		<div class="col-md-12 py-3 text-center">
+												<h1 class="p-3 text-dark">Chris Pump <br> <span class="colorOrange"><h5>WEIGHTLIFT TRAINER</h5></span> </h1>
+												<h5><p class="text-secondary font-weight-light">Our staff includes amazing professionals that have an eye for crossfit</p></h5>
+												
+											</div>
+											
+									  
+									  	</div>
+									
+									</figcaption>
+								</figure>
+							
+							
+							</div>
+						
+						</div>
+					</div>	
+			
+		</div>
+			</section>
+		<section id="contact">
+		<!--	fre day pass and call us row -->
+		
+		<div class="row ">
+			<div class="col-md-6 col-sm-12 bgDayPass vh-100">
+				<div class="row h-100 text-white  text-center">
+					<div class="col-md-12 my-auto">
+						<h3>TRY FOR FREE</h3>
+						<h1 class="display-1 font-weight-bold">FREE 5 DAYS PASS</h1>
+						<button type="button" class="btn bgOrange text-white pt-3"><h3>GET IN TOUCH </h3></button>
+					</div>
+				
+				</div>
+			
+			</div>
+			<div class="col-md-6 col-sm-12 bgCallUs vh-100">
+				<div class="row h-100 text-white  text-center">
+					<div class="col-md-12 my-auto">
+						<h3>CALL US THRU</h3>
+						<h1 class="display-1 font-weight-bold">957 547 4545</h1>
+						<a data-dismiss="modal" data-toggle="modal" href="#modalChoosePlan"><button type="button" class="btn bgOrange text-white pt-3"><h3>GET IN TOUCH </h3></button></a>
+					</div>
+				
+				</div>
+			</div>
+		
+		</div>
+			</section>
+	</div> <!--	end body -->
+		<section id="blog">
+	<!--	Footer-->
+	<div class="container-fluid" style="background-color:#161418">
+		<div class="row py-5 text-md-left text-center">
+			<div class="col-md-2"></div>
+			<div class="col-md-10 text-white">
+				<div class="row py-5">
+					<div class="col-md-4 ">
+						<div class="row ">
+							<div class="col-md-12"><h1>FITNE<span class="colorOrange">SS</span></h1></div>
+							<div class="col-md-11"><p class="py-5 lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p></div>
+							<div class="col-md-12">
+								<p class="lead font-weight-bold "><span class="align-middle mr-3">Follow Us </span> <img src="img/facebook.png"><img src="img/twitter@1X.png" class="mx-3"><img src="img/instagram@1X.png"><img src="img/pinterest@1X.png" class="mx-3"><img src="img/google plus@1X.png"><img src="img/youtube@1X.png" class="mx-3"><img src="img/dribbble@1X.png"><img src="img/tumblr@1X.png" class="mx-3"></p>
+							
+							</div>
+							<div class="col-md-12 py-3 ">
+								<form class="form-inline d-inline-block align-middle m-0 w-100">
+									 
+    								<input type="email" class="form-control-lg" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Your Email">
+									<button type="button" class="btn  bgOrange text-white mb-2"><h5>SUBSCRIBE </h5></button>
+								</form>
+							</div>
+						</div>
+					
+					</div>
+					<div class="col-md-4">
+						<div class="row">
+							<div class="col-md-12">
+								<h2>BLOG</h2>
+								<div class="row pt-5">
+									<div class="col-md-3">
+										<img src="img/photos-7884rHDsW8yqbsyN@1X.png">
+									
+									</div>
+									<div class="col-md-9">
+										<p class="lead align-middle">Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor sit amet, 
+consectetur adipiscing</p>
+										
+										
+									</div>
+								</div>
+								
+								<div class="row py-5">
+									<div class="col-md-3">
+										<img src="img/photos-7884lejLFH9MN8IC@1X.png">
+									
+									</div>
+									<div class="col-md-9">
+										<p class="lead align-middle">Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor sit amet, 
+consectetur adipiscing</p>
+										
+										
+									</div>
+								</div>
+								
+								<div class="row">
+									<div class="col-md-3">
+										<img src="img/photos-7884P2smgicsZFyn@1X.png">
+									
+									</div>
+									<div class="col-md-9">
+										<p class="lead align-middle">Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor sit amet, 
+consectetur adipiscing</p>
+										
+										
+									</div>
+								</div>
+							</div>
+						</div>
+					
+					</div>
+					<div class="col-md-4">
+						<div class="row">
+							<div class="col-md-12">
+							<h2>INSTAGRAM</h2>
+								<div class="row py-5 ">
+									<div class="col-md-12">
+										<img src="../../../../Downloads/ins1.png">
+										<img src="../../../../Downloads/ins2.png">
+										<img src="../../../../Downloads/ins3.png">
+									</div>
+									<div class="col-md-12">
+										<img src="../../../../Downloads/ins4.png">
+										<img src="../../../../Downloads/ins5.png">
+										<img src="../../../../Downloads/ins6.png">
+									</div>
+									<div class="col-md-12">
+										<img src="../../../../Downloads/ins7.png">
+										<img src="../../../../Downloads/ins8.png">
+										<img src="../../../../Downloads/ins9.png">
+									</div>
+								
+								</div>
+								<a href="#" class="text-white">View more photos</a>
+								
+							</div>
+						</div>
+					
+					</div>
+				</div>
+			</div>
+		
+		</div>
+	
+	
+	</div>
+	</section>
+	<script src="js/sample.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous"></script>
+
+	<!-- Bootstrap core JavaScript -->
+  <script src="js/jquery.min.js"></script>
+		<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+
+	
+  <!-- Plugin JavaScript -->
+  <script src="js/jquery.easing.min.js"></script>
+
+  <!-- Custom JavaScript for this theme -->
+  <script src="js/style.js"></script>
+</body>
+</html>

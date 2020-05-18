@@ -1,0 +1,332 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+	
+}
+
+/* iisang size lang dpt font pati title
+		ex: titleclass, pclass
+	button class should be same size
+	
+	*/
+body, p {
+	font-size: 20px;
+	font-family: "VisueltPro Light";
+	
+}
+
+.secondary {
+	font-size: 18px;
+}
+
+.bgHeader {
+	background-image: linear-gradient(rgba(30,26,26,0.50), rgba(30,26,26, 0.50)), url("../img/header replace image@1X.png");
+	
+  background-blend-mode: normal;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.colorOrange {
+	color:#fa7c30;
+}
+
+ .btn.bgOrange{
+	background-color:#fa7c30;
+}
+
+.training > button.btn {
+	 margin: 0;
+  position: absolute;
+ top:100%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.wBorders {
+	border:2px solid #fff;
+}
+
+.wBorders:hover {
+	border:2px solid #fa7c30;
+}
+
+.bgTrainer {
+	background-image: url("../img/replace iamge.png");
+	 background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.navbar-nav .nav-item a h4:hover{
+	color:#fa7c30;
+}
+
+.bgDayPass{
+	max-height: 800px;
+	background-image: linear-gradient(rgba(30,26,26,0.50), rgba(30,26,26, 0.50)), url("../img/replace image1@1X.png");
+	background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.bgCallUs{
+	max-height: 800px;
+	background-image: linear-gradient(rgba(30,26,26,0.50), rgba(30,26,26, 0.50)), url("../img/replace image2@1X.png");
+	background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.lh-2 {
+	line-height: 2;
+}
+
+.form-signin {
+  width: 100%;
+}
+
+.form-signin .btn {
+  font-size: 80%;
+  border-radius: 5rem;
+  letter-spacing: .1rem;
+  font-weight: bold;
+  padding: 1rem;
+  transition: all 0.2s;
+}
+
+.form-label-group {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.form-label-group input {
+  height: auto;
+  border-radius: 2rem;
+	padding:15px;
+}
+
+.form-signin .btn.btn-google {
+  color: white;
+  background-color: #ea4335;
+}
+
+.form-signin .btn.btn-facebook {
+  color: white;
+  background-color: #3b5998;
+}
+
+.form-signin a {
+	color:#393b3d;
+	text-decoration: none;
+}
+
+.form-signin a:hover {
+	text-decoration:underline;
+	color:#393b3d;
+}
+
+.form-label-group input::placeholder {
+  color: #DBD8D8;
+	font-size: 20px;
+}
+.modal-footer h4 a {
+	color:#393b3d;
+	text-decoration: none;
+}
+
+.modal-footer h5 a {
+	color:#393b3d;
+	text-decoration: none;
+}
+
+.modal-footer h5 a:hover {
+	color:#5cb85c;
+	text-decoration: underline;
+}
+
+.modal-footer h4 a:hover {
+	color:#393b3d;
+	text-decoration: underline;
+}
+
+/* sign up form */
+.signup-form form{
+		width: 480px;
+    	margin: 0 auto;
+		
+}
+
+.signup-form .hint-text {
+    color: #999;
+   	font-size: 23px;
+  
+}
+
+.social .btn-primary {
+	background: #507cc0;
+}
+
+.social .btn-info {
+	background: #64ccf1;
+}
+
+.social .btn-danger {
+	background: #df4930;
+}
+
+   .or-seperator {
+        text-align: center;
+        border-top: 1px solid #e0e0e0;
+    }
+    .or-seperator b {
+        padding: 0 10px;
+		width: 40px;
+		height: 40px;
+		font-size: 16px;
+		text-align: center;
+		line-height: 40px;
+		background: #fff;
+		display: inline-block;
+        border: 1px solid #e0e0e0;
+		border-radius: 50%;
+        position: relative;
+        top: -22px;
+        z-index: 1;
+    }
+
+.signup-form .form-control {
+		font-size: 20px;
+		transition: all 0.4s;
+		box-shadow: none;
+	}
+
+.signup-form .form-control:focus {
+        border-color: #5cb85c;
+    }
+
+.signup-form .form-control, .btn {
+        border-radius: 50px;
+		outline: none !important;
+    }
+
+.signup-form .form-group button.signup-btn {
+	border-radius: 50px;
+		outline: none !important;
+}
+
+.modal-footer .loginGreen a:hover {
+	color:#5cb85c;
+}
+
+button> .btn > .training {
+	color: red;
+}
+
+/* Choose Plan form */
+.underlineOrange  {
+	border-top: 2px solid #fa7c30;
+	width: 15%;
+}
+
+.colorGrey {
+	color:#8C8585;
+}
+.gym img{
+	max-height: 200px;
+}
+/* Tabs Card */
+
+
+.tab-card {
+  border:1px solid #eee;
+}
+
+.tab-card-header {
+  background:none;
+	
+}
+/* Default mode */
+.tab-card-header > .nav-tabs {
+  border: none;
+  margin: 0px;
+}
+.tab-card-header > .nav-tabs > li {
+  margin-right: 2px;
+}
+.tab-card-header > .nav-tabs > li > a {
+  border: 0;
+  border-bottom:2px solid transparent;
+  margin-right: 0;
+ background-color: transparent;
+  padding: 2px 15px;
+}
+
+.tab-card-header > .nav-tabs > li > a > h2.show {
+    border-bottom:2px solid #8C8585;
+    color: #fa7c30;
+}
+.tab-card-header > .nav-tabs > li > a > h2:hover {
+    color: #fa7c30;
+}
+
+.tab-card-header > .nav-tabs > li > a {
+	color:#8C8585;
+}
+.tab-card-header > .nav-tabs > li > a > h2.active {
+	color:#8C8585;
+}
+
+
+.tab-card-header > .tab-content {
+  padding-bottom: 0;
+}
+
+.tab-card-header > .nav-tabs > li > a.nav-link.active{
+	background: none;
+	 color: #fa7c30;
+	border-color: #fa7c30;
+	
+}
+
+.rotate {
+    -moz-transition: all .5s linear;
+    -webkit-transition: all .5s linear;
+    transition: all .5s linear;
+}
+.rotate.up {
+    -moz-transform:rotate(180deg);
+    -webkit-transform:rotate(180deg);
+    transform:rotate(180deg);
+}
+
+/*
+.navEffect .fa-arrow-up:active {
+	-webkit-transform: rotate(180deg);
+	-moz-transform: rotate(180deg);
+	transform: rotate(180deg);
+	
+}
+*/
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+	.girlFit img {
+		width:90%;
+		display: block;
+		margin:0 auto;
+		
+	}
+	
+	.navbar .navbar-brand {
+		margin: 0 auto;
+	}
+
+	#navbarResponsive{
+		text-align: center;
+	}	
+
+}
